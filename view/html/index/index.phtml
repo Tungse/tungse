@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tungse | Under Construction</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="author" content="Tung Pham Thanh" />
+		<meta name="keywords" content="wait a minute" />
+		
+		<link type="text/css" rel="stylesheet" href="view/css/index.css" />
+		<script type="text/Javascript" src="view/js/library/jquery.js"></script>
+		<script type="text/Javascript" src="view/js/library/jqueryRotate.2.2.js"></script>
+		<script type="text/Javascript" src="view/js/library/jqueryEasing.1.3.js"></script>
+		<script type="text/Javascript" src="view/js/index.js"></script>
+	</head> 
+	<body> 
+		<div class="wrapper">
+			<div class="holder-face"><img src="view/image/face.png" class="face" /></div>
+			<div class="content">
+				<img src="view/image/button.jpg" class="button" />
+				<img src="view/image/eyebrows.png" class="eyebrows" />
+				<input class="input-comment" type="text" />
+				<div class="holder-comments">
+				<?php foreach($comments as $comment) : ?>
+					<div class="holder-comment">
+						<span class="content-comment" style="font-family:<?php echo $this->fontFamily[array_rand($this->fontFamily)]; ?>; font-size:<?php echo $this->fontSize[array_rand($this->fontSize)]; ?>; font-style:<?php echo $this->fontStyle[array_rand($this->fontStyle)]; ?>; font-weight:<?php echo $this->fontWeight[array_rand($this->fontWeight)]; ?>;"><?php echo $comment->content; ?></span>&nbsp;&nbsp;<span class="comment-created"><?php echo self::calculateDate($comment->_created); ?></span>
+					</div>
+				<?php endforeach; ?>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

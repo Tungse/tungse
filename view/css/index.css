@@ -1,0 +1,84 @@
+.wrapper
+{
+	position:relative;
+	margin:20px 0px;
+}
+.content
+{
+	position: absolute;
+    margin: auto;
+    left: 0; 
+    right: 0;
+    width: 680px;
+    height: 750px;
+    background: url("../../view/image/tungse.jpg");
+    z-index:2;
+}
+.holder-face
+{
+	position: absolute;
+    margin: auto;
+    left: 0; 
+    right: 0;
+    width: 680px;
+    height: 750px;
+    z-index:1;
+}
+.eyebrows
+{
+	width: 393px;
+    height: 80px;
+    position: absolute;
+    top: 125px;
+    left: 161px;
+}
+.button
+{
+    position:absolute;
+    right: -8px;
+    bottom: 75px;
+    cursor:pointer;
+    width:155px;
+    height:74px;
+}
+.input-comment
+{
+	position:absolute;
+    left: 188px;
+	bottom: 89px;
+	border: none;
+	width: 320px;
+	height: 38px;
+	font-size: 28px;
+	outline: none;
+	padding:0px;
+	color: #333;
+	font-family: Helvetica;
+}
+.holder-comments
+{
+	position: absolute;
+	top: 715px;
+	width: 680px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	text-align:center;
+}
+.holder-comment
+{
+	color:#333;
+	margin-bottom: 5px;
+}
+.comment-created
+{
+	color:#aaa;
+	font-size:10px;
+	font-family:Helvetica;
+}
+.face
+{
+	position: absolute;
+	top: 72px;
+	left: 157px;
+	display:none;
+}
